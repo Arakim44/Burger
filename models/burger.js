@@ -2,7 +2,25 @@
 var orm = require("../config/orm.js");
 
 var burger = {
+  all: function(cb){
+    orm.all("burgers",function(res){
+      cb(res);
+    });
+  },
+  //The variable cols and vals are arrays.
+  create: function(cols,vals,cb){
+    orm.create("burgers",cols,vals,function(res){
+      cb(res);
+    });
+  },
 
-}
+  update: function(objColVals, condition, cb){
+    orm.update("cats",objColVals,condition,
+  function(res){
+    cb(res);
+  });
+  }
 
+};
+//Export the database function for the controller (burgers_controller.js)
 module.exports = burger;
