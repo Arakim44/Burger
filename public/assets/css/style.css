@@ -43,6 +43,7 @@ textarea {
 }
 
 #uneatenBurgerZone, #eatenBurgerZone {
+  color: blue;
   width: 40%;
 }
 
