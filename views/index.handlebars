@@ -3,41 +3,39 @@
 <img src="/assets/img/Burger.png" alt="burger!">
 
 <div id="uneatenBurgerZone">
-  {{#each burgers}}
-    {{#unless this.devoured}}
-    	<div class="burgerLine">
-    	   <span>{{id}}.  {{burger_name}}</span>
-    	</div>
-    {{/unless}}
-  {{/each}}
+    {{#each burgers}}
+        {{#unless this.devoured}}
+            <div class="burgerLine">
+                <span>{{id}}.  {{burger_name}}</span>
+            </div>
+        {{/unless}}
+    {{/each}}
 </div>
 
 <div id="devourButtonZone">
-  {{#each burgers}}
-    {{#unless this.devoured}}
-      <div>
-        <form action="/update/{{id}}?_method=PUT" method="POST">
-          <button class="devourButton">Devour it!</button>
-        </form>
-      </div>
-    {{/unless}}
-  {{/each}}
+    {{#each burgers}}
+        {{#unless this.devoured}}
+            <div>
+                <form action="/update/{{id}}?_method=PUT" method="POST">
+                    <button class="devourButton">Devour it!</button>
+                </form>
+            </div>
+        {{/unless}}
+    {{/each}}
 </div>
 
 <div id="eatenBurgerZone">
-  {{#each burgers}}
-    {{#if this.devoured}}
-    	<div class="burgerLine">
-    	   <span>{{id}}.  {{burger_name}}</span>
-    	</div>
-    {{/if}}
-  {{/each}}
+    {{#each burgers}}
+        {{#if this.devoured}}
+            <div class="burgerLine">
+                <span>{{id}}.  {{burger_name}}</span>
+            </div>
+        {{/if}}
+    {{/each}}
 </div>
 
 <form id="newBurgerForm" action="/create" method="POST">
-	<textarea type="text" name="newBurger"></textarea>
+    <textarea type="text" name="newBurger"></textarea>
 
-	<button type="submit">Submit</button>
+    <button type="submit">Submit</button>
 </form>
-
-<h3>Enter a burger you want to eat and click the Submit button</h3>

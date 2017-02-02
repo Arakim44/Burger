@@ -1,24 +1,24 @@
 img {
-  display: block;
-  margin: auto;
-  width: 30%;
-  margin-bottom: 25px;
+    display: block;
+    margin: auto;
+    width: 30%;
+    margin-bottom: 25px;
 }
 
 span {
-  font-size: 25px;
+    font-size: 25px;
 }
 
 body {
-  background-color: sandybrown;
-  text-align: center;
+    background-color: sandybrown;
+    text-align: center;
 }
 
 button {
-  display: block;
-  margin: auto;
-  height: 30px;
-  font-weight: bold;
+    display: block;
+    margin: auto;
+    height: 30px;
+    font-weight: bold;
 }
 
 textarea {
@@ -30,35 +30,35 @@ textarea {
 }
 
 .devourButton {
-  margin-left: 5px;
-  height: 30px;
+    margin-left: 5px;
+    height: 30px;
 }
 
 .burgerLine {
-  border: 1px solid black;
+    border: 1px solid black;
 }
 
 #newBurgerForm {
-  clear: both;
+    clear: both;
 }
 
 #uneatenBurgerZone, #eatenBurgerZone {
-  color: blue;
-  width: 40%;
+    color: blue;
+    width: 40%;
 }
 
 #devourButtonZone {
-  width: 20%;
-  float: left;
+    width: 20%;
+    float: left;
 }
 
 #uneatenBurgerZone {
-  background-color: green;
+    background-color: green;
     float: left;
 }
 
 #eatenBurgerZone {
-  background-color: red;
-  float: right;
-  clear: right;
+    background-color: red;
+    float: right;
+    clear: right;
 }
