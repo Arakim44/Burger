@@ -2,7 +2,9 @@
 
 <img src="/assets/img/Burger.png" alt="burger!">
 
-<div id="uneatenBurgerZone">
+<div class="row">
+
+<div class="col-md-3" id="uneatenBurgers">
     {{#each burgers}}
         {{#unless this.devoured}}
             <div class="burgerLine">
@@ -12,19 +14,19 @@
     {{/each}}
 </div>
 
-<div id="devourButtonZone">
+<div class="col-md-3" id="devourButtonArea">
     {{#each burgers}}
         {{#unless this.devoured}}
             <div>
                 <form action="/update/{{id}}?_method=PUT" method="POST">
-                    <button class="devourButton">Devour it!</button>
+                    <button class="devourButton btn btn-success">Devour it!</button>
                 </form>
             </div>
         {{/unless}}
     {{/each}}
 </div>
 
-<div id="eatenBurgerZone">
+<div "col-md-3"id="eatenBurgers">
     {{#each burgers}}
         {{#if this.devoured}}
             <div class="burgerLine">
@@ -32,6 +34,7 @@
             </div>
         {{/if}}
     {{/each}}
+</div>
 </div>
 
 <form id="newBurgerForm" action="/create" method="POST">

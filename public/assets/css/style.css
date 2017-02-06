@@ -1,64 +1,18 @@
-img {
-    display: block;
-    margin: auto;
-    width: 30%;
-    margin-bottom: 25px;
-}
 
-span {
-    font-size: 25px;
-}
+	span {
+			font-size: 25px;
+	}
 
-body {
-    background-color: sandybrown;
-    text-align: center;
-}
+	body {
+			background-color: white;
+			text-align: center;
+	}
 
-button {
-    display: block;
-    margin: auto;
-    height: 30px;
-    font-weight: bold;
-}
-
-textarea {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    resize: none;
-    height: 60px;
-    width: 300px;
-}
-
-.devourButton {
-    margin-left: 5px;
-    height: 30px;
-}
-
-.burgerLine {
-    border: 1px solid black;
-}
-
-#newBurgerForm {
-    clear: both;
-}
-
-#uneatenBurgerZone, #eatenBurgerZone {
-    color: blue;
-    width: 40%;
-}
-
-#devourButtonZone {
-    width: 20%;
-    float: left;
-}
-
-#uneatenBurgerZone {
-    background-color: green;
-    float: left;
-}
-
-#eatenBurgerZone {
-    background-color: red;
-    float: right;
-    clear: right;
-}
+	#newBurgerForm {
+			clear: both;
+	}
+/*
+	#devourButtonArea {
+			width: 20%;
+			float: left;
+	}*/
