@@ -3,21 +3,25 @@ var orm = require("../config/orm.js");
 
 var model = {
     selectAll: function(cb) {
-        orm.selectAll(function(res) {
+        orm.selectAll("burgers",function(res) {
             cb(res);
-        })
+        });
     },
 
     updateOne: function(burgerID, cb) {
-        orm.updateOne(burgerID, function(res) {
-            cb(res);
-        })
+      var condition = "id ="+ burgerID;
+      orm.updateOne("burgers",{
+        devoured: true
+      }, condition, cb);
+
     },
 
-    insertOne: function(newBurger, cb) {
-        orm.insertOne(newBurger, function(res) {
-            cb(res);
-        })
+    insertOne: function(name, cb) {
+        orm.insertOne("burgers",[
+          "burger_name", "devoured"
+        ], [
+          name, false
+        ], cb);
     }
 }
 
